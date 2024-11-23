@@ -1365,7 +1365,7 @@ footer .footer-links a:hover {
 }
 
 
-@media (max-width: 1440px){
+@media (width < 1440px){
 
 .left-side{
         padding-left: 50px;
