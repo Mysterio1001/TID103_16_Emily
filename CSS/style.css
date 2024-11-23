@@ -53,7 +53,8 @@ body {
 
 /* 左側導航選單 */
 .nav-menu ul {
-    display: flex;z-index: 1; 
+    display: flex
+    ;z-index: 1; 
     list-style: none;
     gap: 30px;
 }
@@ -1364,7 +1365,7 @@ footer .footer-links a:hover {
 }
 
 
-/* @media (max-width: 1440px){
+@media (max-width: 1440px){
 
 .left-side{
         padding-left: 50px;
@@ -1377,4 +1378,4 @@ footer .footer-links a:hover {
 .slider{
     margin-bottom: 100px;
 }
-} */
+}
