@@ -1364,11 +1364,11 @@ footer .footer-links a:hover {
 }
 
 
-@media (max-width: 1440px){
+/* @media (max-width: 1440px){
 
 .left-side{
         padding-left: 50px;
-    }
+}
 
 .search-bar input{
     width: 140px;
@@ -1377,4 +1377,4 @@ footer .footer-links a:hover {
 .slider{
     margin-bottom: 100px;
 }
-}
+} */
