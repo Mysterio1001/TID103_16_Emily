@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar.Topia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="../v2/Js/button_up.js" defer></script>
+    <script src="Js/slider.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- 左半邊導航選單 -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Dessert Shops">
+                    <input type="text" placeholder="Songshan, Taipei">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+
+            <!-- Logo 置中 -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/11211.svg" alt="Sugar.Topia">
+                </a>
+            </div>
+
+            <!-- 右半邊操作區域 -->
+            <div class="actions">
+                <a href="#">write a review</a>
+                <a href="https://www.instagram.com/cupertino.keki/" class="brand-name">
+                    cupertino.keki
+                    <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                </a>
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- main content filter -->
+<div class="main-content">
+    <div class="filters">
+        <p class="filter-title">Filters</p>
+        
+        <!-- Rating Filter -->
+        <div class="filter-group">
+            <p class="filter-label">Rating</p>
+            <div class="rating-filter">
+                <button class="rating-button">★★★★★</button>
+                <button class="rating-button">★★★★☆</button>
+                <button class="rating-button">★★★☆☆</button>
+                <button class="rating-button">★★☆☆☆</button>
+                <button class="rating-button">★☆☆☆☆</button>
+            </div>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="filter-group">
+            <p class="filter-label">Category</p>
+            <div class="category-filter">
+                <button class="category-button">Cinnamon Rolls</button>
+                <button class="category-button">Cheesecakes</button>
+                <button class="category-button">Bagels</button>
+                <button class="category-button">Cafes</button>
+                <button class="category-button">Ice Creams</button>
+                <a href="#" class="see-more">See more</a>
+            </div>
+        </div>
+
+        <!-- Features Filter -->
+        <div class="filter-group">
+            <p class="filter-label">Features</p>
+            <div class="features-filter">
+                <label><input type="checkbox"> Hot and New</label>
+                <label><input type="checkbox"> Kids Friendly</label>
+                <label><input type="checkbox"> Dogs Friendly</label>
+                <label><input type="checkbox"> Alcohol Infused</label>
+            </div>
+        </div>
+    </div>
+    
+    <section class="dessert-shops">
+        <h1>All Dog Friendly dessert shops and Cafes in Taipei</h1>
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">
+                        <button class="category-btn">Cinnamon Rolls</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Cheesecakes</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Kids Friendly</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Dogs Friendly</button>
+                    </span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">
+                        <button class="category-btn">Cinnamon Rolls</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Cheesecakes</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Kids Friendly</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Dogs Friendly</button>
+                    </span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">
+                        <button class="category-btn">Cinnamon Rolls</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Cheesecakes</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Kids Friendly</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Dogs Friendly</button>
+                    </span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">
+                        <button class="category-btn">Cinnamon Rolls</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Cheesecakes</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Kids Friendly</button>
+                    </span>
+                    <span class="category">
+                        <button class="category-btn">Dogs Friendly</button>
+                    </span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">Cinnamon Rolls</span>
+                    <span class="category">Cheesecakes</span>
+                    <span class="category">Kids Friendly</span>
+                    <span class="category">Dogs Friendly</span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">Cinnamon Rolls</span>
+                    <span class="category">Cheesecakes</span>
+                    <span class="category">Kids Friendly</span>
+                    <span class="category">Dogs Friendly</span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">Cinnamon Rolls</span>
+                    <span class="category">Cheesecakes</span>
+                    <span class="category">Kids Friendly</span>
+                    <span class="category">Dogs Friendly</span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">Cinnamon Rolls</span>
+                    <span class="category">Cheesecakes</span>
+                    <span class="category">Kids Friendly</span>
+                    <span class="category">Dogs Friendly</span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">Cinnamon Rolls</span>
+                    <span class="category">Cheesecakes</span>
+                    <span class="category">Kids Friendly</span>
+                    <span class="category">Dogs Friendly</span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+        <!-- Repeat for other shops -->
+        <div class="shop-item">
+            <div class="shop-image">
+                <a href="#" class="map-link" data-lat="25.0584" data-lng="121.5744" data-name="Elephant Garden Neihu">
+                    <img src="img/juliana-malta-qL0iVKHJcT8-unsplash.jpg" alt="Elephant Garden Neihu">
+                </a>
+            </div>
+            <div class="shop-details">
+                <h2>1. Elephant Garden Neihu</h2>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span class="rating-score">4.2 (5.7k reviews)</span>
+                </div>
+                <div class="categories">
+                    <span class="category">Cinnamon Rolls</span>
+                    <span class="category">Cheesecakes</span>
+                    <span class="category">Kids Friendly</span>
+                    <span class="category">Dogs Friendly</span>
+                    
+                </div>
+                <p class="description">Gorem ipsum dolordolordolor sit amet, consectetur adipiscing elit...</p>
+                <div class="services">
+                    <span>✔ Delivery</span>
+                    <span>✔ Takeout</span>
+                </div>
+                <button class="start-order-btn">Start order</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57840.629545262926!2d121.5182723!3d25.0504032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da80a7ad%3A0xacc4d11dc963103c!2z5Y-w5YyX5biC!5e0!3m2!1szh-TW!2stw!4v1710425237071!5m2!1szh-TW!2stw" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+<button id="scrollToTopBtn" class="scroll-to-top-btn">
+    <i class="fas fa-arrow-up"></i> <!-- 使用 Font Awesome 向上箭頭圖標 -->
+</button>
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <p>Sugar.Topia @ 2024. All rights not reserved.</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Business</a>
+        </div>
+        <div class="footer_social-icons">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/cupertino.keki/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

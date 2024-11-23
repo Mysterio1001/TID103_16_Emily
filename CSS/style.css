@@ -1,0 +1,1380 @@
+@import url("reset.css");
+
+body {
+    font-family: poppins;
+}
+
+/* 頁面頂部 header */
+.header {
+    height: 80px;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1000;
+}
+
+/* 左半邊白色背景 */
+.header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, #FCDC94,#fff); 
+}
+
+/* 右半邊橘色背景 */
+.header::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F9A726;
+}
+
+.header-container {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* 確保內容在背景色之上 */
+}
+
+/* 左側導航選單 */
+.nav-menu ul {
+    display: flex;z-index: 1; 
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none !important;
+    color: #3A2513; /* 改為深色，因為背景是白色 */
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-menu a:hover {
+    color: #F9A726;
+}
+
+/* 右側操作區域 */
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions a {
+    color: white; 
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.actions a:not(.btn-signup) {
+    margin-right: 24px;
+    color: #fff; 
+}
+
+.actions a:hover {
+    color: #FCDC94;
+    text-decoration: none !important;
+}   
+
+.actions .btn-login {
+    margin-right: 4px;
+    margin-left: 20px;
+}
+
+.actions .btn-login:hover {
+    background-color: #FCDC94;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none !important;
+}
+
+.link-icon {
+    font-size: 12px;
+}
+
+.btn-login, .btn-signup {
+    padding: 8px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-login {
+    background: transparent;
+    border: 1px solid white;
+    color: white !important;
+}
+
+.btn-signup {
+    background: white;
+    color: #F9A726 !important;
+    border: 1px solid white;
+}
+
+.btn-signup:hover {
+    background-color: #FCDC94;
+    color: #F9A726 !important;
+}
+
+/* Logo 樣式 */
+.logo-container {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    z-index: 100; 
+}
+
+.logo-container img {
+    height: 70px; /* 根據實際 logo 大小調整 */
+    /* width: auto; */
+}
+
+/* 調整 header container 確保不會擋住 logo */
+.header.header-container {
+    position: relative;
+    /* padding-bottom: 10px; */
+    z-index: 10;
+}
+
+/* Split section */
+.split-section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+}
+
+/* 左半邊白色背景 */
+.split-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, #FCDC94,#fff); 
+    z-index: -1;
+}
+
+/* 右半邊橘色背景 */
+.split-section::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F9A726;
+    z-index: -1;
+}
+
+/* Left side */
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 28vh;
+    padding-left: 150px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+/* Right side */
+.right-side {
+    width: 50%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.right-side img {
+    max-width: 75%;
+    height: auto;
+    position: relative;
+    right: 180px;
+}
+
+/* The overlay text on the left side */
+.overlay-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3A2513;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    max-width: 400px;
+    margin-left: 10px;
+    /* padding-left: 10px; */
+}
+
+/* Search bar container */
+.search-bar {
+    /* width: 100%; */
+    /* max-width: 300px; */
+    display: flex;
+    gap: 1px;
+    margin-top: 10px;
+    /* margin-right: 20px; */
+    /* position: absolute; */
+}
+
+/* 搜尋輸入框樣式 */
+.search-bar input {
+    padding: 0px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    flex: 1;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #F9A726;
+    box-shadow: 0 0 0 2px rgba(249, 167, 38, 0.1);
+}
+
+/* 搜尋按鈕樣式 */
+.search-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9A726;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-btn:hover {
+    background-color: #e89615;
+}
+
+/* 搜尋icon樣式 */
+.search-btn i {
+    font-size: 20px; /* 調整圖標大小 */
+    width: 20px; /* 確保寬度固定 */
+    height: 20px; /* 確高度固定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 110px; /* 與搜尋欄保持一定距離 */
+    padding-left:40px;
+}
+
+.social-icons a {
+    width: 60px;
+    height: 40px;
+    /* border-radius: 50%; */
+    /* border: 2px solid #F9A726; */
+    color: #F9A726;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.social-icons a i {
+    font-size: 40px;
+    color: #F9A726; 
+    display: block; 
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);  /* 元素放大 10% */
+}
+
+.social-icons a img {
+    width: 40px;   
+    height: 40px;   
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);  /* 元素放大 10% */
+    transition: all 0.5s ease;
+}
+
+
+/* 輪播器樣式 */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 40px;
+    margin-left: -200px;  /* 向左移動 50px */
+    /* 或者使用 transform */
+    /* transform: translateX(-50px); */
+    margin-top: 60px;
+
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    right: 180px;
+    border-radius: 40px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;  /* 設定固定寬度 */
+    height: 40px;  /* 設定固定高度，與寬度相等 */
+    padding: 0;  /* 移除內距 */
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: transparent;  /* 透明背景 */
+    border: 2px solid #FFF;  /* 加入邊框 */
+    color: #Fff;
+    font-size: 16px;
+    z-index: 10;
+    display: flex;  /* 使用 flex 置中內容 */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.slider-btn:hover {
+    background: rgba(249, 167, 38, 0.1);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #F9A726;
+}
+
+
+/* Join Mailing List Section */
+.join-mailing-list {
+    background-color: #FCDC94;
+    padding: 100px 0;
+    margin: 80px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.join-mailing-list::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: rgba(249, 167, 38, 0.1);
+    border-radius: 50%;
+}
+
+.mailing-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 0 40px;
+    position: relative;
+}
+
+/* 修改圖片容器 */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* 改為靠右對齊 */
+    margin-right: 50px; /* 向右移動 */
+    position: relative; /* 確保定位正確 */
+}
+
+/* 主圖片樣式 */
+.image-container img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 文字容器 */
+.text-container {
+    flex: 1;
+    margin-left: -15px; /* 向左移動 */
+}
+
+.image-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #F9A726;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.text-wrapper {
+    max-width: 460px;
+}
+
+.accent-text {
+    display: inline-block;
+    background: #F9A726;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.text-wrapper h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3A2513;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.text-wrapper p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    flex: 1;
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper i {
+    color: #F9A726;
+    margin-right: 10px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F9A726;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 4px;
+}
+
+.subscribe-btn:hover {
+    background: #e89615;
+    transform: translateY(-2px);
+}
+
+.subscribe-benefits {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefit-item i {
+    color: #F9A726;
+    font-size: 14px;
+}
+
+.benefit-item span {
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .mailing-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-wrapper {
+        align-items: center;
+    }
+    
+    .image-wrapper {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+/* Latest Reviews Section */
+.latest_review_section {
+    max-width: 1000px;  /* 調整最大寬度 */
+    margin: 0 auto;     /* 改為 auto 來自動置中 */
+    padding: 56px 20px;
+    text-align: center;
+}
+
+/* Header */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    text-align: left;  /* 確保標題靠左對齊 */
+}
+
+.review-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.review-view-all {
+    color: #f9a726;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Review Grid */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 改用 grid 布局，每行3個 */
+    gap: 20px;
+}
+
+.review-card {
+    width: 100%;  /* 讓卡片填滿網格空間 */
+}
+
+.review-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(249, 167, 38, 0.6);
+    padding: 15px;
+}
+
+/* User Section */
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    text-align: left;  /* 確保用戶信息靠左對齊 */
+}
+
+.user-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.post-time {
+    font-size: 0.6em;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* Review Content */
+.review-content {
+    padding: 15px 0;
+    text-align: left;  /* 確保內容靠左對齊 */
+}
+
+.review-content h2 {
+    font-size: .9em;
+    margin: 0 0 10px 0;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: #5A8F29;
+}
+
+.review-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.review-text {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.read-more {
+    color: #5A8F29;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .latest_review_section {
+        margin: 0 auto;  /* 在較小螢幕上置中 */
+        padding: 56px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 平板上每行2個 */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-grid {
+        grid-template-columns: 1fr;  /* 手機上每行1個 */
+    }
+}
+
+/* 新增：標題區域的樣式 */
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; /* 與 activities-wrapper 同寬 */
+    margin: 0 auto 24px;
+    padding: 0 20px;
+}
+
+.reviews-header h1 {
+    margin: 0; /* 移除標題預設邊距 */
+    font-size: 24px;
+}
+
+.reviews-header .view-all {
+    color: #F9A726;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.reviews-header .view-all:hover {
+    text-decoration: underline;
+}
+
+/* dessert Category Section */
+.dessert_categories_section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 56px 20px;
+    text-align: center;
+}
+
+/* Category Header */
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    text-align: left;
+}
+
+.category-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3A2513;
+}
+
+.category-view-all {
+    color: #F9A726;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.category-view-all:hover {
+    text-decoration: underline;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;  /* 添加內邊距 */
+    transition: all 0.3s ease;  /* 添加過渡效果 */
+    border-radius: 16px;  /* 添加圓角 */
+}
+
+.category-card img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;  /* 添加圖片過渡效果 */
+}
+
+/* 修改 hover 效果 */
+.category-card:hover {
+    background-color: rgba(249, 168, 38, 0.2);  /* 更淡的背景色 */
+    transform: scale(0.98);  /* 稍微縮小整個卡片 */
+}
+
+.category-card:hover img {
+    transform: scale(0.95);  /* 圖片稍微縮小 */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Instagram Section */
+.instagram_photo_section {
+    background-color: #FCDC94; 
+    padding: 60px 20px;
+    margin-top: 120px;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.instagram-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.instagram-container h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.instagram-container p {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-grid img:hover {
+    transform: scale(1.05);
+}
+
+.instagram-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #F9A726;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* 移除連結底線 */
+    transition: all 0.3s ease;
+}
+
+.instagram-follow-btn i {
+    font-size: 18px;
+}
+
+.instagram-follow-btn:hover {
+    background-color: #FCDC94;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* button up */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;  /* 設定固定寬度 */
+    height: 40px; /* 設定固定高度（與寬度相同） */
+    border-radius: 50%; /* 設為 50% 使其成為圓形 */
+    background-color: #f9a826c1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top-btn i {
+    font-size: 20px;
+}
+
+/* 懸停效果 */
+.scroll-to-top-btn:hover {
+    background-color: #e89615;
+    transform: translateY(-2px);
+}
+
+
+/* footer */
+footer {
+    background-color: #f9a726; 
+    padding: 100px 0;
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    text-align: center; 
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer_social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer_social-icons a:hover {
+    opacity: 0.7;
+}
+
+.footer_social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* category.html */
+.filters {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 300px;  /* 調整為適合的寬度 */
+    margin-left: 20px;  /* 把過濾篩選區塊放到左邊 */
+    margin-top: 140px;
+}
+
+.filter-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3A2513;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    /* margin-top: 60px; */
+    margin-bottom: 20px;
+}
+
+.filter-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3A2513;
+    margin-bottom: 10px;
+}
+
+/* Rating Filter - 垂直排列 */
+.rating-filter {
+    display: flex;
+    flex-direction: column;  /* 垂直排列 */
+    gap: 8px;
+}
+
+.rating-button {
+    width: 100px;
+    padding: 8px 8px;
+    background-color: transparent;
+    border: 2px solid #F9A726;
+    color: #F9A726;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.rating-button:hover {
+    background-color: #F9A726;
+    color: white;
+}
+
+/* Category Filter - 水平排列並換行 */
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-button {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid #F9A726;
+    color: #F9A726;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.category-button:hover {
+    background-color: #F9A726;
+    color: white;
+}
+
+.see-more {
+    font-size: 14px;
+    color: #F9A726;
+    text-decoration: none;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+/* Features Filter */
+.features-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.features-filter label {
+    font-size: 14px;
+    color: #3A2513;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* 中間搜尋結果區 ************************************/
+.dessert-shops {
+    flex: 0 1 600px; /* 修改：設定最佳寬度為 600px */
+    min-width: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #3A2513;
+}
+
+.shop-item {
+    display: flex;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.shop-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.shop-details {
+    margin-left: 20px;
+
+    flex-grow: 1;
+}
+
+.shop-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3A2513;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #F9A726;
+}
+
+.rating-score {
+    font-size: 14px;
+    color: #777;
+    margin-left: 10px;
+}
+
+.categories {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category-btn {
+    background-color: #F9A726;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #FCDC94;
+}
+
+.description {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.services {
+    font-size: 14px;
+    color: #333;
+}
+
+.services span {
+    margin-right: 10px;
+}
+
+.start-order-btn {
+    background-color: #F9A726;
+    color: white;
+    margin-top: 10px;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    /* border-radius: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-order-btn:hover {
+    background-color: #FCDC94;
+}
+
+/* footer *****************************************/
+footer {
+    background-color: #f9a726; 
+    padding: 100px 0;
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    text-align: center; 
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    /* margin: 0 10px; */
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 120px; /* header 高度 */
+    min-height: calc(100vh - 80px - 100px); 
+}
+
+.filters {
+    width: 200px;
+    flex-shrink: 0;
+    margin-top: 0; /* 移除原有的 margin-top */
+    margin-right: 80px;
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    position: sticky;
+    top: 100px;
+}
+
+.dessert-shops {
+    flex: 1;
+    min-width: 0; /* 防止內容溢出 */
+    /* padding: 0 0px; */
+}
+
+.map-container {
+    width: 400px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 120px);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* 新的訂閱表單容器 */
+.subscribe-form {
+    display: flex;
+    flex-direction: row; /* 確保水平排列 */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 5px 15px;
+    width: 250px; /* 設定固定寬度 */
+    height: 45px;
+}
+
+.input-wrapper i {
+    color: #F9A726;
+    margin-right: 10px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    height: 45px;
+    padding: 0 25px;
+    background: #F9A726;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: #e89615;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 1440px){
+
+.left-side{
+        padding-left: 50px;
+    }
+
+.search-bar input{
+    width: 140px;
+}
+
+.slider{
+    margin-bottom: 100px;
+}
+}

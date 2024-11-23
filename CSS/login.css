@@ -1,0 +1,263 @@
+@import url("reset.css");
+
+body {
+    font-family: poppins;
+}
+ /* 主容器樣式 */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fff, #FCDC94 50%, #F9A726 50%);
+    padding: 100px 20px;
+}
+
+/* 登入框樣式 */
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-box h1 {
+    color: #3A2513;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 表單樣式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3A2513;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: #3A2513;
+}
+
+.form-group input:focus {
+    border-color: #F9A726;
+    outline: none;
+}
+
+/* 記住我和忘記密碼區域 */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
+
+.forgot-password {
+    color: #F9A726;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* 登入按鈕 */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #F9A726;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e89615;
+}
+
+/* 社交登入區域 */
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn i {
+    font-size: 20px;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.google i {
+    color: #DB4437;
+}
+
+.facebook i {
+    color: #4267B2;
+}
+
+.apple i {
+    color: #000;
+}
+
+/* 註冊連結 */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #F9A726;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+/* footer */
+footer {
+    background-color: #f9a726; 
+    padding: 100px 0;
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    text-align: center; 
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer_social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer_social-icons a:hover {
+    opacity: 0.7;
+}
+
+.footer_social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* 註冊頁面特定樣式 */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: #3A2513;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #F9A726;
+    outline: none;
+}
+
+/* 服務條款複選框容器 */
+.remember-me span {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* 調整註冊表單的間距 */
+.login-box.signup {
+    padding: 40px;
+}
+
+.login-box.signup .form-group {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar.Topia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="Js/button_up.js" defer></script>
+    <script src="Js/slider.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- 左半邊導航選單 -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">cinnamon Rolls</a></li>
+                    <li><a href="index.html">cheese cakes</a></li>
+                    <li><a href="index.html">ice creams</a></li>
+                    <li><a href="index.html">cafes</a></li>
+                </ul>
+            </nav>
+            <img src="" alt="">
+            <!-- Logo 置中 -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./img/11211.svg" alt="Sugar.Topia">
+                </a>
+            </div>
+
+            <!-- 右半邊操作區域 -->
+            <div class="actions">
+                <a href="review.html">write a review</a>
+                <a href="https://www.instagram.com/cupertino.keki/" class="brand-name">
+                    cupertino.keki
+                    <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                </a>
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <section class="split-section">
+        <div class="left-side">
+            <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Dessert Shops">
+                <input type="text" placeholder="Songshan, Taipei">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cupertino.keki/"><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href="review.html"><i class="fa-regular fa-star"></i></a>
+                <a href="aboutus.html"><img src='./img/icon.svg' alt="Sugar.Topia Logo"></a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="slider">
+                <div class="slides">
+                    <img src="./img/lp.jpg" alt="Dessert 1" class="slide">
+                    <img src="./img/slide2.jpg" alt="Dessert 2" class="slide">
+                    <img src="./img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Dessert 3" class="slide">
+                    <img src="./img/elena-leya-iMIFA_y3PpM-unsplash.jpg" alt="Dessert 4" class="slide">
+                    <img src="./img/joanna-kosinska-b26cpkvkcZA-unsplash.jpg" alt="Dessert 5" class="slide">
+                    <img src="./img/slide2.jpg" alt="Dessert 6" class="slide">
+                </div>
+                <button class="slider-btn prev">&#10094;</button>
+                <button class="slider-btn next">&#10095;</button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- mailing part -->
+    <section class="join-mailing-list">
+        <div class="mailing-content">
+            <div class="image-container">
+                <img src="./img/slide2.jpg" alt="Dessert" />
+            </div>
+            <div class="text-container">
+                <div class="text-wrapper">
+                    <span class="accent-text">Newsletter</span>
+                    <h2>Join Our Sweet Community</h2>
+                    <p>Be the first to discover new dessert spots, exclusive offers, and mouthwatering updates.</p>
+                    <div class="subscribe-form">
+                        <div class="input-wrapper">
+                            <i class="far fa-envelope"></i>
+                            <input type="email" placeholder="Your email address" />
+                        </div>
+                        <button class="subscribe-btn">
+                            Subscribe
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="subscribe-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Weekly dessert recommendations</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Exclusive member discounts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- latest reviews ---------------------------------------------->
+<div class="latest_review_section">
+    <div class="review-header">
+        <h1>Latest Reviews</h1>
+        <a href="#" class="review-view-all">View All</a>
+    </div>
+    <div class="review-grid">
+        <div class="review-card">
+            <div class="review-item">
+                <div class="review-user">
+                    <img src="img/profile2.jpg" alt="User 1" class="user-avatar">
+                    <div class="user-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="post-time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <img src="img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Review Image" class="review-image">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="shop_detail.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-item">
+                <div class="review-user">
+                    <img src="img/profile3.jpg" alt="User 1" class="user-avatar">
+                    <div class="user-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="post-time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <img src="img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Review Image" class="review-image">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="shop_detail.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-item">
+                <div class="review-user">
+                    <img src="img/profile.jpg" alt="User 1" class="user-avatar">
+                    <div class="user-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="post-time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <img src="img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Review Image" class="review-image">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="shop_detail.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-item">
+                <div class="review-user">
+                    <img src="img/profile3.jpg" alt="User 1" class="user-avatar">
+                    <div class="user-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="post-time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <img src="img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Review Image" class="review-image">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="shop_detail.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-item">
+                <div class="review-user">
+                    <img src="img/profile.jpg" alt="User 1" class="user-avatar">
+                    <div class="user-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="post-time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <img src="img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Review Image" class="review-image">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="shop_detail.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-item">
+                <div class="review-user">
+                    <img src="img/profile3.jpg" alt="User 1" class="user-avatar">
+                    <div class="user-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="post-time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <img src="img/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Review Image" class="review-image">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="shop_detail.html" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- dessert_categories_section ------------------------------------------->
+<section class="dessert_categories_section">
+    <div class="category-header">
+        <h2>Categories</h2>
+        <a href="category.html" class="category-view-all">View All</a>
+    </div>
+    <div class="category-grid">
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c1.svg" alt="Cinnamon Rolls">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c2.svg" alt="Cinnamon Rolls">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c3.svg" alt="Ice Creams">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c4.svg" alt="Ice Creams">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c5.svg" alt="Cinnamon Rolls">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c6.svg" alt="Ice Creams">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c7.svg" alt="Cinnamon Rolls">
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="category.html">
+                <img src="img/c8.svg" alt="Ice Creams">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- instagram photo part -->
+<section class="instagram_photo_section">
+    <div class="instagram-container">
+        <a href="https://www.instagram.com/cupertino.keki/" class="instagram-follow-btn" target="_blank">
+            <i class="fab fa-instagram"></i>
+            Follow Us
+        </a>
+        <p>@cupertino.keki</p>
+        <div class="instagram-grid">
+            <img src="img/elena-leya-Gk2a6AnlAaU-unsplash.jpg" alt="Instagram Photo">
+            <img src="img/mae-mu-74HGrqRby2Q-unsplash.jpg" alt="Instagram Photo">
+            <img src="img/slide3.jpg" alt="Instagram Photo">
+            <img src="img/rens-d-6LTAljmu2cY-unsplash.jpg" alt="Instagram Photo">
+            <img src="img/profile2.jpg" alt="Instagram Photo">
+            <img src="img/jakub-cihak-0dGOKTwnx78-unsplash.jpg" alt="Instagram Photo">
+        </div>
+        
+    </div>
+</section>
+
+<button id="scrollToTopBtn" class="scroll-to-top-btn">
+    <i class="fas fa-arrow-up"></i> 
+</button>
+
+
+<!-- footer ------------------------------------------------------>
+<footer>
+    <div class="footer-content">
+        <p>Sugar.Topia @ 2024. All rights not reserved.</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Business</a>
+        </div>
+        <div class="footer_social-icons">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/cupertino.keki/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
+
+
+
